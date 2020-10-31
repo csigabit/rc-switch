@@ -127,6 +127,7 @@ static const RCSwitch::Protocol PROGMEM proto[] = {
   { 365,  0, { 0, 0 }, 1, {  18,  1 }, { 3,  1 }, { 1, 3 }, true,   0 },  // 32 (1ByOne Doorbell) from @Fatbeard https://github.com/sui77/rc-switch/pull/277
   { 340,  0, { 0, 0 }, 1, {  14,  4 }, { 1,  2 }, { 2, 1 }, false,  0 },  // 33 (Dooya Control DC2708L)
   { 120,  0, { 0, 0 }, 1, {   1, 28 }, { 1,  3 }, { 3, 1 }, false,  0 }   // 34 DIGOO SD10
+  { 16,  0, { 0, 0 }, 1, {   290, 99 }, { 17,  51 }, { 29, 39 }, false,  0 }   // 35 BREL Motor Blinds (DC-104)
 };
 
 enum {
