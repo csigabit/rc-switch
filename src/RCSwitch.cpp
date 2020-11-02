@@ -95,7 +95,7 @@ static const RCSwitch::Protocol PROGMEM proto[] = {
   { 100,  0, { 0, 0 }, 1, { 30, 71 }, { 4, 11 }, { 9, 6 }, false,  0 },  // 03
   { 380,  0, { 0, 0 }, 1, {  1,  6 }, { 1,  3 }, { 3, 1 }, false,  0 },  // 04
   { 500,  0, { 0, 0 }, 1, {  6, 14 }, { 1,  2 }, { 2, 1 }, false,  0 },  // 05
-  { 450,  0, { 0, 0 }, 1, { 23,  1 }, { 1,  2 }, { 2, 1 }, true,   0 },  // 06 (HT6P20B)
+  { 160,  0, { 0, 0 }, 1, {   28, 10 }, { 2,  5 }, { 4, 3 }, false,  0 }   // 06 BREL Motor Blinds (DC-104)
   { 150,  0, { 0, 0 }, 1, {  2, 62 }, { 1,  6 }, { 6, 1 }, false,  0 },  // 07 (HS2303-PT, i. e. used in AUKEY Remote)
   { 320,  0, { 0, 0 }, 1, { 36,  1 }, { 1,  2 }, { 2, 1 }, true,   0 },  // 08 (Came 12bit, HT12E)
   { 700,  0, { 0, 0 }, 1, { 32,  1 }, { 1,  2 }, { 2, 1 }, true,   0 },  // 09 (Nice_Flo 12bit)
@@ -126,8 +126,8 @@ static const RCSwitch::Protocol PROGMEM proto[] = {
   { 400,  0, { 0, 0 }, 1, {   1,  1 }, { 1,  2 }, { 2, 1 }, false, 43 },  // 31 (Mertik Maxitrol G6R-H4T1)
   { 365,  0, { 0, 0 }, 1, {  18,  1 }, { 3,  1 }, { 1, 3 }, true,   0 },  // 32 (1ByOne Doorbell) from @Fatbeard https://github.com/sui77/rc-switch/pull/277
   { 340,  0, { 0, 0 }, 1, {  14,  4 }, { 1,  2 }, { 2, 1 }, false,  0 },  // 33 (Dooya Control DC2708L)
-  { 120,  0, { 0, 0 }, 1, {   1, 28 }, { 1,  3 }, { 3, 1 }, false,  0 },   // 34 DIGOO SD10
-  { 160,  0, { 0, 0 }, 1, {   29, 10 }, { 2,  5 }, { 4, 3 }, false,  0 }   // 35 BREL Motor Blinds (DC-104)
+  { 120,  0, { 0, 0 }, 1, {   1, 28 }, { 1,  3 }, { 3, 1 }, false,  0 }   // 34 DIGOO SD10
+  
 };
 
 enum {
