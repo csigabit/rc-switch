@@ -78,8 +78,10 @@ class RCSwitch {
     void switchOff(char sGroup, int nDevice);
 
     void sendTriState(const char* sCodeWord);
+    void sendQuadState(const char* sCodeWord);
     void send(unsigned long long code, unsigned int length);
     void send(const char* sCodeWord);
+    void sendQQ();
     
     #if not defined( RCSwitchDisableReceiving )
     void enableReceive(int interrupt);
