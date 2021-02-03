@@ -95,7 +95,7 @@ static const RCSwitch::Protocol PROGMEM proto[] = {
   { 100,  0, { 0, 0 }, 1, { 30, 71 }, { 4, 11 }, { 9, 6 }, false,  0 },  // 03
   { 380,  0, { 0, 0 }, 1, {  1,  6 }, { 1,  3 }, { 3, 1 }, false,  0 },  // 04
   { 500,  0, { 0, 0 }, 1, {  6, 14 }, { 1,  2 }, { 2, 1 }, false,  0 },  // 05
-  { 160,  0, { 0, 0 }, 1, {   28, 10 }, { 2,  5 }, { 4, 3 }, false,  0 },   // 06 BREL Motor Blinds (DC-104)
+  { 16,  0, { 0, 0 }, 1, {   294, 94 }, { 19,  49 }, { 43, 25 }, false,  0 },   // 06 BREL Motor Blinds (DC-104)
   { 150,  0, { 0, 0 }, 1, {  2, 62 }, { 1,  6 }, { 6, 1 }, false,  0 },  // 07 (HS2303-PT, i. e. used in AUKEY Remote)
   { 320,  0, { 0, 0 }, 1, { 36,  1 }, { 1,  2 }, { 2, 1 }, true,   0 },  // 08 (Came 12bit, HT12E)
   { 700,  0, { 0, 0 }, 1, { 32,  1 }, { 1,  2 }, { 2, 1 }, true,   0 },  // 09 (Nice_Flo 12bit)
@@ -514,7 +514,7 @@ void RCSwitch::sendTriState(const char* sCodeWord) {
 }
 
 void RCSwitch::sendQuadState(const char* sCodeWord) {
-// turn the tristate code word into the corresponding bit pattern, then send it
+// turn the quadstate code word into the corresponding bit pattern, then send it
   unsigned long long code = 0;
   unsigned int length = 0;
   for (const char* p = sCodeWord; *p; p++) {
